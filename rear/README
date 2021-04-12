@@ -1,0 +1,4 @@
+1. create a SLES15sp2 images
+2. auto install rear
+3. auto create a new partition for the rear
+4. set the rear to auto recovery in boot

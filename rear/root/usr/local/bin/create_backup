@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dev=$(eval $(lsblk -oMOUNTPOINT,PKNAME -P  | grep 'MOUNTPOINT="/"'); echo $PKNAME | sed 's/[0-9]*$//')
+sed -i '/BACKUP_MOUNTCMD/d' /etc/rear/local.conf
+echo "BACKUP_MOUNTCMD='mount /dev/"$dev"4'" >> /etc/rear/local.conf
+
+rear -d -D mkbackup
