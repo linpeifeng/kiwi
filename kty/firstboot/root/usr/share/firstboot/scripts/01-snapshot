@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "remove the reconfig file"
+if [ -e "/var/lib/YaST2/reconfig_system" ]; then
+    rm -rf /var/lib/YaST2/reconfig_system
+fi
+
+echo "make a snapshot"
+transactional-update run ls
