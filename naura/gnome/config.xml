@@ -40,7 +40,6 @@
             devicepersistency="by-uuid"
         >
             <oemconfig>
-                <oem-systemsize>20480</oem-systemsize>
                 <oem-resize>true</oem-resize>
                 <oem-device-filter>/dev/ram</oem-device-filter>
                 <oem-multipath-scan>false</oem-multipath-scan>

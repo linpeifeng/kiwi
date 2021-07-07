@@ -37,7 +37,7 @@
             devicepersistency="by-uuid"
         >
             <oemconfig>
-                <oem-systemsize>20480</oem-systemsize>
+		<oem-resize>true</oem-resize>
                 <oem-device-filter>/dev/ram</oem-device-filter>
                 <oem-multipath-scan>false</oem-multipath-scan>
             </oemconfig>
@@ -101,7 +101,6 @@
     <packages type="image" profiles="SelfInstall">
         <package name="dracut-kiwi-oem-repart"/>
         <package name="dracut-kiwi-oem-dump"/>
-        <package name="kernel-firmware"/> 
 	<package name="kernel-rt"/>
     </packages>
     <packages type="bootstrap">
